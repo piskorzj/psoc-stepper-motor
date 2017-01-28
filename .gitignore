@@ -1,0 +1,11 @@
+codegentemp
+Generated_Source
+CortexM3
+*.cywrk.*
+*.cyprj.*
+*.cycdx
+*.cyfit
+*.rpt
+*.uvopt
+*.uvproj
+*_timing.html
