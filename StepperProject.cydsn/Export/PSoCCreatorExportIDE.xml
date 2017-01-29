@@ -58,9 +58,8 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cyfitteriar.inc</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cyfitter.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cydisabledsheets.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\STEPPER_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\STEPPER.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\STEPPER.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Stepper_api.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cycodeshareimport.ld</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cycodeshareexport.ld</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cycodeshareimport.scat</File>
@@ -93,23 +92,34 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\project.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\timer_clock.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\timer_clock.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\STEP_CTL.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\STEP_CTL.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\STEP_CTL_PM.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\MONITOR_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\MONITOR.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\MONITOR.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\STEP_COUNT.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\STEP_COUNT.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\STEP_COUNT_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\STEP_STATUS.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\STEP_STATUS.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\LED_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\LED.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\LED.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\KRANCOWKA_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\KRANCOWKA.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\KRANCOWKA.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\STEPPER_PINS_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\STEPPER_PINS.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\STEPPER_PINS.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Stepper_STEP_CTL.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Stepper_STEP_CTL.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Stepper_STEP_CTL_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Stepper_STEP_COUNT.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Stepper_STEP_COUNT.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Stepper_STEP_COUNT_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Stepper_STEP_STATUS.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Stepper_STEP_STATUS.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\StepperIRQ.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\StepperIRQ.h</File>
+        </Files>
+      </Folder>
+      <Folder BuildType="BUILD" Path="C:\Development\PSoCWorkspace\Stepper.cydsn\Stepper_v0_8\API">
+        <Files Root="C:\Development\PSoCWorkspace\Stepper.cydsn">
+          <File BuildType="BUILD" Toolchain="">.\Stepper_v0_8\API\Stepper_api.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Stepper_v0_8\API\Stepper.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Development\PSoCWorkspace\Stepper.cydsn\Export\ARM_GCC_Generic">

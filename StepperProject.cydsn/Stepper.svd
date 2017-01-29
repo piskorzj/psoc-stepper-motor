@@ -7,28 +7,7 @@
   <width>32</width>
   <peripherals>
     <peripheral>
-      <name>STEP_CTL</name>
-      <description>No description available</description>
-      <baseAddress>0x40006577</baseAddress>
-      <addressBlock>
-        <offset>0</offset>
-        <size>0x0</size>
-        <usage>registers</usage>
-      </addressBlock>
-      <registers>
-        <register>
-          <name>STEP_CTL_CONTROL_REG</name>
-          <description>No description available</description>
-          <addressOffset>0x0</addressOffset>
-          <size>8</size>
-          <access>read-write</access>
-          <resetValue>0</resetValue>
-          <resetMask>0</resetMask>
-        </register>
-      </registers>
-    </peripheral>
-    <peripheral>
-      <name>STEP_STATUS</name>
+      <name>Stepper_STEP_STATUS</name>
       <description>No description available</description>
       <baseAddress>0x40006567</baseAddress>
       <addressBlock>
@@ -38,7 +17,7 @@
       </addressBlock>
       <registers>
         <register>
-          <name>STEP_STATUS_STATUS_REG</name>
+          <name>Stepper_STEP_STATUS_STATUS_REG</name>
           <description>No description available</description>
           <addressOffset>0x0</addressOffset>
           <size>8</size>
@@ -47,7 +26,7 @@
           <resetMask>0</resetMask>
         </register>
         <register>
-          <name>STEP_STATUS_MASK_REG</name>
+          <name>Stepper_STEP_STATUS_MASK_REG</name>
           <description>No description available</description>
           <addressOffset>0x20</addressOffset>
           <size>8</size>
@@ -56,7 +35,7 @@
           <resetMask>0</resetMask>
         </register>
         <register>
-          <name>STEP_STATUS_STATUS_AUX_CTL_REG</name>
+          <name>Stepper_STEP_STATUS_STATUS_AUX_CTL_REG</name>
           <description>No description available</description>
           <addressOffset>0x30</addressOffset>
           <size>8</size>
@@ -183,7 +162,28 @@
       </registers>
     </peripheral>
     <peripheral>
-      <name>STEP_COUNT</name>
+      <name>Stepper_STEP_CTL</name>
+      <description>No description available</description>
+      <baseAddress>0x40006577</baseAddress>
+      <addressBlock>
+        <offset>0</offset>
+        <size>0x0</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <registers>
+        <register>
+          <name>Stepper_STEP_CTL_CONTROL_REG</name>
+          <description>No description available</description>
+          <addressOffset>0x0</addressOffset>
+          <size>8</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <resetMask>0</resetMask>
+        </register>
+      </registers>
+    </peripheral>
+    <peripheral>
+      <name>Stepper_STEP_COUNT</name>
       <description>No description available</description>
       <baseAddress>0x0</baseAddress>
       <addressBlock>
@@ -193,7 +193,7 @@
       </addressBlock>
       <registers>
         <register>
-          <name>STEP_COUNT_GLOBAL_ENABLE</name>
+          <name>Stepper_STEP_COUNT_GLOBAL_ENABLE</name>
           <description>PM.ACT.CFG</description>
           <addressOffset>0x400043A3</addressOffset>
           <size>8</size>
@@ -211,7 +211,7 @@
           </fields>
         </register>
         <register>
-          <name>STEP_COUNT_CONTROL</name>
+          <name>Stepper_STEP_COUNT_CONTROL</name>
           <description>TMRx.CFG0</description>
           <addressOffset>0x40004F00</addressOffset>
           <size>8</size>
@@ -295,7 +295,7 @@
           </fields>
         </register>
         <register>
-          <name>STEP_COUNT_CONTROL2</name>
+          <name>Stepper_STEP_COUNT_CONTROL2</name>
           <description>TMRx.CFG1</description>
           <addressOffset>0x40004F01</addressOffset>
           <size>8</size>
@@ -360,7 +360,7 @@
           </fields>
         </register>
         <register>
-          <name>STEP_COUNT_CONTROL3_</name>
+          <name>Stepper_STEP_COUNT_CONTROL3_</name>
           <description>TMRx.CFG2</description>
           <addressOffset>0x40004F02</addressOffset>
           <size>8</size>
@@ -455,7 +455,7 @@
           </fields>
         </register>
         <register>
-          <name>STEP_COUNT_PERIOD</name>
+          <name>Stepper_STEP_COUNT_PERIOD</name>
           <description>TMRx.PER0 - Assigned Period</description>
           <addressOffset>0x40004F04</addressOffset>
           <size>16</size>
@@ -464,7 +464,7 @@
           <resetMask>0</resetMask>
         </register>
         <register>
-          <name>STEP_COUNT_COUNTER</name>
+          <name>Stepper_STEP_COUNT_COUNTER</name>
           <description>TMRx.CNT_CMP0 - Current Down Counter Value</description>
           <addressOffset>0x40004F06</addressOffset>
           <size>16</size>

@@ -11,31 +11,32 @@
 */
 #include <project.h>
 
+volatile static int dir = 0;
+
+CY_ISR(step_irq) {
+    LED_Write(LED_Read() ^ 1);
+    if(Stepper_Status() & Stepper_STATUS_STOP_DETECTED_MASK)
+        dir ^= 1;
+    Stepper_Step(512, dir);
+}
+
 int main()
 {
     CyGlobalIntEnable; /* Enable global interrupts. */
 
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
-    CyDelay(2000);
-    STEP_COUNT_Start();
-    STEP_CTL_Write(2);
-    CyDelay(2000);
-    unsigned int togle = 0;
+    Stepper_Start();
+    StepperIRQ_StartEx(step_irq);
+    
+    Stepper_Step(512, dir);
+    
     for(;;)
     {
-        STEP_COUNT_WritePeriod(2048);
-        STEP_CTL_Write(3 | togle);
-        LED_Write(LED_Read() ^ 1);
-        //togle ^= 0x4;
-        while((STEP_STATUS_Read() & 0x1) == 0);
-        CyDelay(2000);
-        
-        STEP_COUNT_WritePeriod(2048);
-        STEP_CTL_Write(3 | togle);
-        LED_Write(LED_Read() ^ 1);
-        togle ^= 0x4;
-        while((STEP_STATUS_Read() & 0x1) == 0);
-        CyDelay(2000);
+        /*LED_Write(LED_Read() ^ 1);
+        Stepper_Step(512, dir);
+        while((Stepper_Status() & Stepper_STATUS_DONE_MASK) == 0);
+        if(Stepper_Status() & Stepper_STATUS_STOP_DETECTED_MASK)
+            dir ^= 1;*/
     }
 }
 
