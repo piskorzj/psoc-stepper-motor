@@ -98,9 +98,6 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\LED_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\LED.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\LED.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\KRANCOWKA_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\KRANCOWKA.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\KRANCOWKA.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\STEPPER_PINS_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\STEPPER_PINS.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\STEPPER_PINS.h</File>
