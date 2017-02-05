@@ -19,6 +19,7 @@
     #define `$INSTANCE_NAME`_STATUS_DONE_MASK (0x01)
     #define `$INSTANCE_NAME`_STATUS_STOP_DETECTED_MASK (0x02)
     #define `$INSTANCE_NAME`_STATUS_STOP_DIR_MASK (0x04)
+    #define `$INSTANCE_NAME`_STATUS_FAILED_START_MASK (0x08)
     
     void `$INSTANCE_NAME`_Start(void);
     void `$INSTANCE_NAME`_Step(uint16 steps, int dir);
