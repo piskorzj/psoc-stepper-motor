@@ -25,6 +25,7 @@
     void `$INSTANCE_NAME`_Step(uint16 steps, int dir);
     
     uint8 `$INSTANCE_NAME`_Status(void);
+    uint16 `$INSTANCE_NAME`_Steps(void);
     
 #endif/*`$INSTANCE_NAME`_STEPPER_H*/
 

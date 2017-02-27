@@ -25,6 +25,10 @@ uint8 (*stepper_status[NUM_OF_DRIVES])(void) = {
     Stepper_Status
 };
 
+uint16 (*stepper_steps[NUM_OF_DRIVES])(void) = {
+    Stepper_Steps
+};
+
 volatile int stepper_irq_done[NUM_OF_DRIVES] = {0};
 
 CY_ISR(step_irq) {
@@ -66,7 +70,11 @@ int main()
             if(stepper_irq_done[i]) {
                 stepper_irq_done[i] = 0;
                 uint8 status = stepper_status[i]();
-                uint8 datain[3] = {COMMAND_STEP_FINISHED, i, status};
+                uint16 steps = 0;
+                if(status & Stepper_STATUS_STOP_DETECTED_MASK)
+                    steps = stepper_steps[i]();
+                
+                uint8 datain[5] = {COMMAND_STEP_FINISHED, i, status, (steps >> 8) & 0xff, steps & 0xff};
                 USB_LoadInEP(EP_IN, datain, sizeof(datain));
             }
         }

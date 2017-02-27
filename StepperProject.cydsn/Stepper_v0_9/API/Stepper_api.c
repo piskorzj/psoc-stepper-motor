@@ -27,4 +27,8 @@ uint8 `$INSTANCE_NAME`_Status(void) {
     return `$INSTANCE_NAME`_STEP_STATUS_Read();    
 }
 
+uint16 `$INSTANCE_NAME`_Steps(void) {
+    return *`$INSTANCE_NAME`_Stepper_core_Stepper_datapath_F1_PTR;
+}
+
 /* [] END OF FILE */

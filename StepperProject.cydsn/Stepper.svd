@@ -1487,7 +1487,7 @@
     <peripheral>
       <name>Stepper_STEP_CTL</name>
       <description>No description available</description>
-      <baseAddress>0x40006575</baseAddress>
+      <baseAddress>0x40006577</baseAddress>
       <addressBlock>
         <offset>0</offset>
         <size>0x0</size>
@@ -1508,7 +1508,7 @@
     <peripheral>
       <name>Stepper_STEP_STATUS</name>
       <description>No description available</description>
-      <baseAddress>0x40006565</baseAddress>
+      <baseAddress>0x40006467</baseAddress>
       <addressBlock>
         <offset>0</offset>
         <size>0x0</size>
